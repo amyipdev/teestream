@@ -1,0 +1,17 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "teestream"
+version = "0.1.0"
+authors = [
+    { name="Amy Parker", email="amy@amyip.net" },
+]
+description = "Redirect output to both a file and stdout/stderr"
+readme = "README.md"
+requires-python = ">=3.12"
+
+[project.urls]
+Homepage = "https://github.com/amyipdev/teestream"
+Issues = "https://github.com/amyipdev/teestream/issues"
