@@ -12,13 +12,13 @@
           inherit system;
         };
       in {
-        packages.default = pkgs.python312Packages.buildPythonPackage rec {
+        packages.default = pkgs.python313Packages.buildPythonPackage rec {
           pname = "teestream";
           version = "0.1.0";
           src = ./.;
           doCheck = false;
           pyproject = true;
-          nativeBuildInputs = with pkgs.python312Packages; [
+          nativeBuildInputs = with pkgs.python313Packages; [
             hatchling
           ];
         };
